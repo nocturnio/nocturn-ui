@@ -1,10 +1,7 @@
-(function () {
-    const cml = window.cmlruntime;
+module.exports.register = function (cml, modules) {
     const elem = modules.elem;
     const mat = modules.mat;
-    const refresh = modules.refresh;
     const is = modules.is;
-    const util = modules.util;
     const checker = modules.checker;
 
     cml.addTest({
@@ -42,4 +39,4 @@
             return c.result;
         }
     });
-})();
+};

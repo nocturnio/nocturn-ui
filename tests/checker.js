@@ -1,25 +1,20 @@
-(function () {
-    const cml = window.cmlruntime;
-    const elem = modules.elem;
+const cml = window.cml;
 
-    var checker = function (context) {
-        return {
-            check: function (desc, func) {
-                if (this.result) {
-                    if (func && !func()) {
-                        this.result = false;
-                        var msg = `Failed Test: In context [${context}]. ${desc}.`;
-                        cml.cml.error(msg + " see log.");
-                        console.log(msg);
-                    }
+module.exports = function (context) {
+    return {
+        check: function (desc, func) {
+            if (this.result) {
+                if (func && !func()) {
+                    this.result = false;
+                    var msg = `Failed Test: In context [${context}]. ${desc}.`;
+                    cml.cml.error(msg + " see log.");
+                    console.log(msg);
                 }
-            },
-            xcheck: function (desc, func) {
+            }
+        },
+        xcheck: function (desc, func) {
 
-            },
-            result: true
-        };
+        },
+        result: true
     };
-
-    modules.checker = checker;
-})();
+};

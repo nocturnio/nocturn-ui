@@ -1,5 +1,4 @@
-(function () {
-    const cml = window.cmlruntime;
+module.exports.register = function (cml, modules) {
     const elem = modules.elem;
     const mat = modules.mat;
     const refresh = modules.refresh;
@@ -67,4 +66,4 @@
             return c.result;
         }
     })
-})();
+};
