@@ -6,6 +6,7 @@ module.exports.register = function (cml, dependencies) {
     require("./lib/modules/Banner.js").register(cml, dependencies);
     require("./lib/modules/NavBar.js").register(cml, dependencies);
     require("./lib/modules/SideNav.js").register(cml, dependencies);
+    require("./lib/modules/FAB.js").register(cml, dependencies);
 
     require("./lib/components/Button.js").register(cml, dependencies);
     require("./lib/components/Link.js").register(cml, dependencies);
@@ -23,6 +24,7 @@ module.exports.register = function (cml, dependencies) {
     require("./lib/components/Carousel.js").register(cml, dependencies);
     require("./lib/components/SideNavList.js").register(cml, dependencies);
     require("./lib/components/SideNavSection.js").register(cml, dependencies);
+    require("./lib/components/FABList.js").register(cml, dependencies);
     require("./lib/components/TextField.js").register(cml, dependencies);
     require("./lib/components/PasswordField.js").register(cml, dependencies);
     require("./lib/components/EmailField.js").register(cml, dependencies);
