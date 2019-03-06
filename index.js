@@ -27,4 +27,10 @@ const dependencies = {
     http: require("./lib/http.js")
 };
 
+cml.cml.preloader = function (isOn) {
+    mat.preloader({
+        on: isOn
+    });
+};
+
 require("./library.js").register(cml, dependencies);
