@@ -48,4 +48,5 @@ module.exports.register = function (cml, dependencies) {
     require("./lib/components/HashChange.js").register(cml, dependencies);
     require("./lib/components/Batch.js").register(cml, dependencies);
     require("./lib/components/Http.js").register(cml, dependencies);
+    require("./lib/components/PageRouter.js").register(cml, dependencies);
 };

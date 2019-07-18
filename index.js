@@ -33,4 +33,6 @@ cml.cml.preloader = function (isOn) {
     });
 };
 
+cml.mat = mat;
+
 require("./library.js").register(cml, dependencies);
