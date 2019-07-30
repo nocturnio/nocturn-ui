@@ -48,5 +48,11 @@ module.exports.register = function (cml, dependencies) {
     require("./lib/components/HashChange.js").register(cml, dependencies);
     require("./lib/components/Batch.js").register(cml, dependencies);
     require("./lib/components/Http.js").register(cml, dependencies);
-    require("./lib/components/PageRouter.js").register(cml, dependencies);
+    require("./lib/components/View.js").register(cml, dependencies);
+    require("./lib/components/Model.js").register(cml, dependencies);
+    require("./lib/components/Accessor.js").register(cml, dependencies);
+    require("./lib/components/Scene.js").register(cml, dependencies);
+
+    // depends on Batch.js
+    require("./lib/modules/Grid.js").register(cml, dependencies);
 };
