@@ -1,5 +1,5 @@
 {
-    "version": "1.0.9",
+    "version": "1.0.17",
     "files": [
         "./lib/modules.js",
         "./lib/is.js",
