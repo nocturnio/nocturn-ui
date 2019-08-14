@@ -3,7 +3,7 @@
 
 ## Dependencies
 
-__[Component Markup Language](https://www.npmjs.com/package/component-markup-language)__
+__[Component Markup Language](https://github.com/nocturnio/component-markup-language)__
 
 
 ## Compiling
